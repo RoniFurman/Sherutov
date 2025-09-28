@@ -1,4 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+// Add all solid icons to the library
+library.add(fas);
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -21,9 +28,7 @@ const Footer: React.FC = () => {
               href="mailto:support@sherutov.com"
               className="hover:text-gray-200 transition-colors duration-200 flex items-center gap-2 text-center focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-mainLogo rounded-sm"
               aria-label="שלח אימייל ל-support@sherutov.com">
-              <span role="img" aria-hidden="true">
-                📧
-              </span>{" "}
+              <FontAwesomeIcon icon={["fas", "envelope"]} aria-hidden="true" />{" "}
               support@sherutov.com
             </a>
             <a
@@ -32,10 +37,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="hover:text-gray-200 transition-colors duration-200 flex items-center gap-2 text-center focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-mainLogo rounded-sm"
               aria-label="פתח שיחה ב-WhatsApp - נפתח בחלון חדש">
-              <span role="img" aria-hidden="true">
-                📱
-              </span>{" "}
-              WhatsApp
+              <FontAwesomeIcon icon={faWhatsapp} aria-hidden="true" /> WhatsApp
             </a>
           </nav>
 
