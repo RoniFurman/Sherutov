@@ -45,7 +45,7 @@ const FAQItem: React.FC<{ question: string; answer: string }> = ({
   return (
     <div className="border border-gray-200 rounded-lg bg-mainBackground">
       <button
-        className="w-full p-4 sm:p-6 text-center flex justify-center items-center hover:bg-gray-50 transition-colors duration-200 relative"
+        className="w-full p-4 sm:p-6 text-center flex justify-center items-center hover:bg-mainBackground transition-colors duration-200 relative"
         onClick={() => setIsOpen(!isOpen)}>
         <h3 className="text-base sm:text-lg font-semibold text-gray-800 px-8 sm:px-12">
           {question}
